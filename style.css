@@ -9,15 +9,15 @@
 }
 
 .morning {
-    --background: url("https://images.unsplash.com/photo-1470137430626-983a37b8ea46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
+    --background: url("./morning.jpg");
 }
 
 .afternoon {
-    --background: url("https://images.unsplash.com/photo-1560783757-be3bda126303?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+    --background: url("./afternoon.jpg");
 }
 
 .night {
-    --background: url("https://images.unsplash.com/photo-1564490894604-231a19ca17ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
+    --background: url("./night.jpg")
 }
 
 body {
@@ -28,6 +28,8 @@ body {
     align-items: center;
 
     background: var(--background) no-repeat;
+    background-size: cover;
+    object-fit: cover;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -108,7 +110,7 @@ h2 {
     font-size: 20px;
     background-color: rgb(247, 91, 91);
     opacity: .8;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4)
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 aside {
@@ -121,15 +123,27 @@ aside {
 }
 
 form input {
-    padding: 10px;
+    padding: 10px 30px 10px 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 form button {
-    padding: 3px 20px;
-    color: blueviolet;
+    padding: 5px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(116, 71, 221);
+    opacity: .8;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+form button:hover {
+    background-color: rgb(77, 37, 172);
+}
+
+form button:active {
+    transform: translateY(2px);
 }
 
 form {
@@ -190,4 +204,7 @@ form label {
         width: 100vw;
     }
 
+    form button {
+        padding: 3px 20px;
+    }
 }

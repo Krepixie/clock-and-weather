@@ -52,16 +52,35 @@ setInterval(updateClock, 1000);
 
 // var latitude = ;
 // var longitude = ;
-// const api_key = '8c57925a532f7b10a29c934c87b87e6a'
-// const url = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&exclude=current,minutely,hourly,alerts&appid=${api_key}&units=metric&lang=pt_br`
+const api_key = '8c57925a532f7b10a29c934c87b87e6a';
+// const weather_url = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&exclude=current,minutely,hourly,alerts&appid=${api_key}&units=metric&lang=pt_br`;
+// const city_url = `http://api.openweathermap.org/geo/1.0/direct?q=${city_name},br&appid=${api_key}`;
 
+// var city_name = "São+Paulo";
 // type Weather = {
 
 // }
 
 
+// async function getCityName() {
+//     try{
+//         const response = await fetch(city_url);
+//         const data = response.json();
+
+//         data.forEach( async (city) => {
+//             const [lat, lon] = await 
+//         });
+//     } catch (err) {
+//         console.error(err)
+//     }
+// }
+
+// getCityName();
+
+// replace space with "+"
+
 // async function getWeatherData() {
-//     try{const response = await fetch(url);
+//     try{const response = await fetch(weather_url);
 //     const data = await response.json();
     
 
@@ -69,6 +88,3 @@ setInterval(updateClock, 1000);
 //         console.error(err)
 //     }
 // }
-
-
-// background ******************************
